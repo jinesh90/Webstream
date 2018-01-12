@@ -1,0 +1,57 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "roku.html".
+ -->
+<html>
+<head>
+    <title>Getting Started Extension's Popup</title>
+    <style type="text/css">
+        body {
+            margin: 10px;
+            white-space: nowrap;
+        }
+
+        h1 {
+            font-size: 15px;
+        }
+
+        #container {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+        .separator {
+            width: 100%;
+            border-top: 2px groove blueviolet;
+            margin: 5px -5px 5px -3px;
+        }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+    -->
+    <script src="javascripts/popup.js"></script>
+</head>
+
+<body style="overflow: hidden">
+<div id="titletext">
+    <img src="images/roku-title.png" class="logo">
+</div>
+<div id="separator0" class="separator" style="display: block;"></div>
+
+<h1>Roku Web Video Sharing</h1>
+
+
+<p>Roku Video Sharing</p>
+<p>Now Add video to your favorite Roku streaming device</p>
+
+
+<div id="separator1" class="separator" style="display: block;"></div>
+<a href="https://www.roku.com/index" target="_blank">Click here to buy new Roku device</a>
+</body>
+</html>
